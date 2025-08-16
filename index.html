@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festejando a Conexão entre Campo e Cidade</title>
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f9ff;
+      color: #1e293b;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    /* Navegação */
+    nav {
+      background: #1e40af;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Conteúdo */
+    section {
+      padding: 40px;
+      background: #f0f9ff;
+      border-radius: 15px;
+      margin: 30px auto;
+      max-width: 950px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      color: #1e40af;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: white;
+      border-left: 6px solid #2563eb;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Botão */
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background: #3b82f6;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #1e40af;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Festejando a Conexão entre Campo e Cidade</h1>
+    <p>2025</p>
+  </header>
+
+  <nav>
+    <a href="#contexto">Contexto</a>
+    <a href="#problemas">Problemas</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <!-- Página 1 - Contexto -->
+  <section id="contexto">
+    <h2> Contexto Geral</h2>
+    <div class="card">
+      <p>O campo e a cidade são dois mundos diferentes, mas profundamente conectados. O campo fornece alimentos, matérias-primas e mantém tradições culturais vivas, enquanto a cidade oferece tecnologia, serviços e oportunidades de crescimento econômico.</p>
+      <p>Essa relação é essencial para que a sociedade funcione de maneira equilibrada. Sem o campo, não teríamos o que comer; sem a cidade, não teríamos meios para expandir a produção e desenvolver inovações.</p>
+      <p>Celebrar essa conexão é também valorizar o trabalho do agricultor, a cultura local e a vida urbana em harmonia com o meio rural.</p>
+    </div>
+  </section>
+
+  <!-- Página 2 - Problemas -->
+  <section id="problemas">
+    <h2> Problemas na Relação</h2>
+    <div class="card">
+      <p>Apesar da interdependência, existem desafios importantes entre campo e cidade:</p>
+      <ul>
+        <li>Diferença cultural e social entre moradores rurais e urbanos;</li>
+        <li>Êxodo rural: muitas pessoas deixam o campo em busca de oportunidades nas cidades;</li>
+        <li>Dificuldade de acesso a serviços básicos no meio rural, como saúde e educação;</li>
+        <li>Desigualdade econômica entre quem produz no campo e quem consome na cidade;</li>
+        <li>Questões ambientais, como desmatamento e uso de agrotóxicos.</li>
+      </ul>
+      <p>Esses problemas dificultam a construção de uma relação equilibrada e justa entre os dois mundos.</p>
+    </div>
+  </section>
+
+  <!-- Página 3 - Soluções -->
+  <section id="solucoes">
+    <h2> Soluções e Caminhos</h2>
+    <div class="card">
+      <p>Para fortalecer a conexão entre campo e cidade, algumas soluções podem ser aplicadas:</p>
+      <ul>
+        <li>Investir em educação e tecnologia no meio rural;</li>
+        <li>Promover feiras e eventos que valorizem a cultura do campo;</li>
+        <li>Garantir políticas públicas que favoreçam pequenos agricultores;</li>
+        <li>Incentivar o consumo de produtos locais e orgânicos;</li>
+        <li>Fomentar projetos de sustentabilidade que beneficiem tanto campo quanto cidade.</li>
+      </ul>
+      <p>Quando o campo e a cidade trabalham juntos, todos ganham: mais qualidade de vida, mais respeito ao meio ambiente e mais oportunidades para as futuras gerações.</p>
+    </div>
+  </section>
+
+  <!-- Página 4 - Interatividade (Quiz) -->
+  <section id="quiz">
+    <h2> Quiz Interativo</h2>
+    <div class="card">
+      <p>Vamos ver o quanto você entendeu sobre a conexão entre campo e cidade?</p>
+      <p><strong>Pergunta:</strong> Qual é a principal contribuição do campo para a cidade?</p>
+      <button onclick="mostrarResposta()">Mostrar Resposta</button>
+      <p id="resposta" style="display:none; margin-top:15px; font-weight:bold; color:#2563eb;">
+        O campo fornece alimentos e matérias-primas essenciais para a sobrevivência e o desenvolvimento das cidades!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p> Projeto Escolar - Festejando a Conexão entre Campo e Cidade</p>
+  </footer>
+
+  <script>
+    function mostrarResposta() {
+      document.getElementById("resposta").style.display = "block";
+    }
+  </script>
+</body>
+</html>
